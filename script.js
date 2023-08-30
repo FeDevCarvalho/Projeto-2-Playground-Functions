@@ -16,3 +16,12 @@ function calcArea() {
     let valor = (base * altura) / 2.
     frase.innerText = `A area deste triangulo é: ` + valor;
 }
+
+function splitSentence() {
+    let frase = document.getElementById('input-1-desafio-3').value;
+    let frase2 = document.getElementById('array-1-desafio-3');
+    let meuArray = [];
+    meuArray.push(...frase.split(" "))
+    console.log(meuArray);
+    frase2.innerText = `O seu array é: [` + meuArray + `]`;
+}
