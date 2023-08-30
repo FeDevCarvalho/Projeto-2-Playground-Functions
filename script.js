@@ -8,3 +8,11 @@ function compareTrue() {
         frase.innerText = "FALSE - Nome e/ou Idade não estão corretas"
     }
 };
+
+function calcArea() {
+    let base = document.getElementById('input-1-desafio-2').value;
+    let altura = document.getElementById('input-2-desafio-2').value;
+    let frase = document.getElementById('frase-desafio-2');
+    let valor = (base * altura) / 2.
+    frase.innerText = `A area deste triangulo é: ` + valor;
+}
