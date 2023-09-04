@@ -46,3 +46,13 @@ function pushName() {
     frase2.innerText = `O seu array é: [` + meuArray + `]`;
     console.log(meuArray[meuArray.length - 1] + ", " + meuArray[0]);
 }
+
+function footballPoints(){
+    let wins = document.getElementById("numeroDeVitorias").value;
+    let draws = document.getElementById("numeroDeEmpates").value;
+    let points = document.getElementById("pontosDeFutebol");
+    let calc = (wins * 3) + ( draws * 1);
+    console.log(calc)
+        points.innerHTML = `temos ` + calc + ` pontos !!`;
+  
+}
