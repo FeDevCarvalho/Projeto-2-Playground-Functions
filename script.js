@@ -1,3 +1,10 @@
+let meuArray = [];
+let ArrayDoHighestCount = [];
+let array = [1, 2, 4, 6, 0, 10, 10, 2, 3, 5, 10, 40, 39];
+let maiorNumero = 0;
+let contagem = 0;
+let nEhIgual = 0;
+
 function compareTrue() {
     let valor1 = document.getElementById('input-1-desafio-1').value;
     let valor2 = document.getElementById('input-2-desafio-1').value;
@@ -15,7 +22,7 @@ function calcArea() {
     let frase = document.getElementById('frase-desafio-2');
     let valor = (base * altura) / 2.
     frase.innerText = `A area deste triangulo é: ` + valor;
-}
+};
 
 function splitSentence() {
     let frase = document.getElementById('input-1-desafio-3').value;
@@ -24,7 +31,7 @@ function splitSentence() {
     meuArray.push(...frase.split(" "))
     console.log(meuArray);
     frase2.innerText = `O seu array é: [` + meuArray + `]`;
-}
+};
 
 function concatName() {
     let meuArray = [];
@@ -35,9 +42,7 @@ function concatName() {
     // console.log(meuArray);
     frase2.innerText = `O seu array é: [` + meuArray + `]`;
     console.log(meuArray[meuArray.length - 1] + ", " + meuArray[0]);
-}
-
-let meuArray = [];
+};
 
 function pushName() {
     let frase = document.getElementById('input-1-desafio-4').value;
@@ -45,9 +50,9 @@ function pushName() {
     let frase2 = document.getElementById('array-1-desafio-4')
     frase2.innerText = `O seu array é: [` + meuArray + `]`;
     console.log(meuArray[meuArray.length - 1] + ", " + meuArray[0]);
-}
+};
 
-function footballPoints(){
+function footballPoints() {
     let wins = document.getElementById("numeroDeVitorias").value;
     let draws = document.getElementById("numeroDeEmpates").value;
     let points = document.getElementById("pontosDeFutebol");
@@ -55,4 +60,27 @@ function footballPoints(){
     console.log(calc)
         points.innerHTML = `temos ` + calc + ` pontos !!`;
   
-}
+};
+
+function highestCount() {
+    for(let index = 0; index < array.length; index += 1) {
+        if(maiorNumero < array[index]) {
+            maiorNumero = array[index]
+        }
+    }
+    console.log("O maior numero é: " + maiorNumero)
+};
+highestCount();
+
+function highestCountagi() {
+    for(let index = 0; index < array.length; index += 1) {
+        if(maiorNumero = array[index]) {
+            nEhIgual += 1
+        } else {
+            contagem += 1
+        }
+    }
+    console.log("A contagem esta em: " + contagem + " vezes !");
+    console.log(nEhIgual);
+};
+highestCountagi();

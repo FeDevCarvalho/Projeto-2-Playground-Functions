@@ -18,3 +18,7 @@
 5. Crie uma função que calcule a quantidade de pontos no futebol:
 - Escreva uma função com o nome footballPoints que receba o número de vitórias e o número de empates, e retorne a quantidade de pontos que o time marcou em um campeonato.
 - Para tanto, considere que cada vitória vale 3 pontos e cada empate vale 1 ponto.
+
+6. Crie uma função que calcule a repetição do maior número":
+- Escreva uma função chamada highestCount que, ao receber uma array de números, retorne a quantidade de vezes que o maior deles se repete.
+[Exemplo] - Caso o parâmetro de highestCount seja uma array com valores [9, 1, 2, 3, 9, 5, 7], a função deverá retornar 2, que é a quantidade de vezes que o número 9 (maior número do array) se repete.
