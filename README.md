@@ -11,3 +11,6 @@
 
 3. Crie uma função que divida a frase:
 - Escreva uma função com o nome splitSentence, a qual receberá uma string e retornará uma array de strings separadas por cada espaço na string original.
+
+4 - Crie uma função que use concatenação de strings:
+- Escreva uma função com o nome concatName que, ao receber uma array de strings, retorne uma string com o formato 'ÚLTIMO ITEM, PRIMEIRO ITEM', independente do tamanho da array.

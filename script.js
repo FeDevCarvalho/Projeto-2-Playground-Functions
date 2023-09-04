@@ -25,3 +25,24 @@ function splitSentence() {
     console.log(meuArray);
     frase2.innerText = `O seu array é: [` + meuArray + `]`;
 }
+
+function concatName() {
+    let meuArray = [];
+    let frase = document.getElementById('input-1-desafio-4').value;
+    let frase2 = document.getElementById('array-1-desafio-4')
+    meuArray = frase.split('***')
+    // meuArray.push(...frase)
+    // console.log(meuArray);
+    frase2.innerText = `O seu array é: [` + meuArray + `]`;
+    console.log(meuArray[meuArray.length - 1] + ", " + meuArray[0]);
+}
+
+let meuArray = [];
+
+function pushName() {
+    let frase = document.getElementById('input-1-desafio-4').value;
+    meuArray.push(frase);
+    let frase2 = document.getElementById('array-1-desafio-4')
+    frase2.innerText = `O seu array é: [` + meuArray + `]`;
+    console.log(meuArray[meuArray.length - 1] + ", " + meuArray[0]);
+}
