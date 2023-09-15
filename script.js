@@ -84,3 +84,17 @@ function highestCountagi() {
     console.log(nEhIgual);
 };
 highestCountagi();
+
+function catAndMouse(mouse, cat1, cat2) {
+    let distanciaDoCat1 = mouse - cat1;
+    let distanciaDoCat2 = mouse - cat2;
+    if(distanciaDoCat1 > distanciaDoCat2) {
+        console.log("O gato 2 está na frente !")
+    } else if (distanciaDoCat2 > distanciaDoCat1) {
+        console.log("O gato 1 está na frente !")
+    } else {
+        console.log("Os gatos se trombaram !!")
+        console.log("O rato fugiu !")
+    }
+}
+catAndMouse(100, 30, 60);
